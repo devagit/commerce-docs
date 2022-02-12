@@ -66,19 +66,7 @@ These instructions assume you are working with an existing site. See the Drupal.
 - [Profile]
 - [State Machine]
 
-3. Ludwig generates a listing of libraries required by those modules. The Packages page at `admin/reports/packages` provides a download link for each missing library along with the paths where they should be placed.
-
-![Ludwig user interface](../images/ludwig-ui.jpg)
-
-4. Download the libraries, then clear the cache to make them available. For example, download commerceguys/addressing and place it in `modules/contrib/address/lib/commerceguys-addressing/v1.0.0`. You should see the STATUS for each required package change from "Missing" to "Installed". Alternatively, if you are comfortable with the command line, you can use Drupal Console or Drush commands.
-
- **Drupal Console**
- - ludwig:list: List all managed packages.
- - ludwig:download: Download missing packages.
-
- **Drush**
- - ludwig-download: Download missing packages.
-
+3. Ludwig generates a listing of libraries required by those modules. Visit the Packages page at `admin/reports/packages` and use the "Download missing packages" button to download all missing libraries automatically. For Ludwig guide and help visit [Ludwig module documentation].
 
 5. Install Commerce and the 6 required modules.
 
@@ -94,6 +82,7 @@ In subsequent sections of the [Installation and updates documentation](../), it 
  [these instructions]: https://github.com/drupal-composer/drupal-project/issues/64#issuecomment-206455356
  [Composer template for Drupal projects README]: https://github.com/drupal-composer/drupal-project/blob/8.x/README.md
  [Ludwig module]: https://www.drupal.org/project/ludwig
+ [Ludwig module documentation]: https://www.drupal.org/docs/contributed-modules/ludwig
  [Commerce]: https://www.drupal.org/project/commerce
  [Address]: https://www.drupal.org/project/address
  [Entity API]: https://www.drupal.org/project/entity
